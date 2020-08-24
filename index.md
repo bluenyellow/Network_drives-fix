@@ -1,4 +1,4 @@
-    net use H: /delete
+net use H: /delete
 net use U: /delete
 Remove-Item -Force "C:\Users\user\Desktop\H_disk.lnk"
 Remove-Item -Force "C:\Users\user\Desktop\U_disk.lnk"
