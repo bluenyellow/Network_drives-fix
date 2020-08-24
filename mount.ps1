@@ -1,14 +1,14 @@
 net use H: /delete
 net use U: /delete
-Remove-Item -Force "C:\Users\muckova\Desktop\H_disk.lnk"
-Remove-Item -Force "C:\Users\muckova\Desktop\U_disk.lnk"
+Remove-Item -Force "C:\Users\user\Desktop\H_disk.lnk"
+Remove-Item -Force "C:\Users\user\Desktop\U_disk.lnk"
 
-net use H: \\hds\reklama
-net use U: \\intraserver\ucko
+net use H: \\path\share
+net use U: \\path\share
 
 
 $TargetFile = "H:\"
-$ShortcutFile = "C:\Users\muckova\Desktop\H_disk.lnk"
+$ShortcutFile = "C:\Users\user\Desktop\H_disk.lnk"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
 $Shortcut.TargetPath = $TargetFile
@@ -17,7 +17,7 @@ $Shortcut.Save()
 
 
 $TargetFile = "U:\"
-$ShortcutFile = "C:\Users\muckova\Desktop\U_disk.lnk"
+$ShortcutFile = "C:\Users\user\Desktop\U_disk.lnk"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
 $Shortcut.TargetPath = $TargetFile
