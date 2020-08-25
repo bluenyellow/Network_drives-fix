@@ -3,12 +3,10 @@ Explanation of a problem:
 One of updates(I think) cause disconnecting network drives after reboot. A little red cross appears on the network drive icon, and it is not possible to open network drive. The device name is already in use appears.
 
 -Things I tried to solve this:
-
 -
 -Remapping drives to other letters
 -Finding phantom mounted drives in registry
 -Mounting drives through powershell(net use)
-
 -Nothing works
 -
 
