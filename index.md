@@ -1,19 +1,19 @@
-Explanation of a problem:
+#Explanation of a problem:
 
 One of updates(I think) cause disconnecting network drives after reboot. A little red cross appears on the network drive icon, and it is not possible to open network drive. The device name is already in use appears.
 
--Things I tried to solve this:
+##Things I tried to solve this:
 
 -Remapping drives to other letters
 -Finding phantom mounted drives in registry
 -Mounting drives through powershell(net use)
 
--Nothing works
+##Nothing works
 
 
 Pressure of time was immense(it was in work environment), so I must bring the solution.
 
-Explanation of solution:
+##Explanation of solution:
 
 The script below needs to run from Task Scheduler as action invited by event 10000(Microsoft-Windows-NetworkProfile/Operational), which is change of network connection.
 Script deletes previously created drive mappings and Shortcuts from desktop, then create them again.
