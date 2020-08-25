@@ -1,3 +1,6 @@
+Tento problem
+
+
 net use H: /delete
 net use U: /delete
 Remove-Item -Force "C:\Users\user\Desktop\H_disk.lnk"
